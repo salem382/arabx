@@ -1,0 +1,675 @@
+
+
+/*start main links*/
+
+.main-sections {
+    .links {
+        justify-content: center;
+        li {
+            margin: 20px 30px 0;
+            a {
+                text-decoration: none;
+                color: #b7b7b7;
+                font-weight: 700;
+                position: relative;
+                transition: all .3s ease-in-out;
+                text-decoration: none;
+                &:hover {
+                    color: #f62779;
+                    &::after {
+                        width: 25px;
+                    }
+                }
+                &:after {
+                    content: '';
+                    transition: all .3s ease-in-out;
+                    display: block;
+                    width: 0;
+                    height: 2px;
+                    background: #f62779;
+                    position: absolute;
+                    bottom: -8px;
+                    right: 0;
+                }
+            }
+        }
+    }
+}
+
+
+/*End main links*/
+
+/*start slick slider*/
+
+.new-product {
+    position: relative;
+    .slick-dots {
+        bottom: 10px !important;
+    }
+    margin-top: 20px;
+    .slick-item {
+        background: url('../../images/Intro.png') center;
+        background-size: cover;
+        height: 404px;
+        @media (max-width:767px) {
+            height: 200px;
+        }
+        p {
+            margin-top: 8%;
+            align-items: center;
+            font-size: 39px;
+            width: 49%;
+            @media (max-width:767px) {
+                width: 100%;
+                text-align: center;
+                font-size: 20px;
+                margin-top: 12%;
+            }
+        }
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background: linear-gradient(62deg, rgba(0, 170, 255, 0.2) 22%, rgba(246, 39, 121, 0.2) 100%);
+    }
+    .slick-dots li button:before {
+        background-color: #f62779 !important;
+        border-radius: 50%;
+        z-index: 99;
+        width: 10px;
+        height: 10px;
+    }
+}
+
+/*End slick slider*/
+
+/*start new arrived*/
+
+.wasal {
+    margin-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+    @media (max-width:992px) {
+        margin-top: 40px;
+    }
+    .the-head {
+        h3 {
+            width: 140px;
+        }
+    }
+    .new-arrived {
+        margin-top: 90px;
+        position: relative;
+        .item {
+            margin: 0 5px;
+            border-radius: 3px;
+            height:260px;
+            border: 1px solid #b7b7b7;
+            &:hover {
+                .bottom-part {
+                    background: rgba(#f62779, 0.3);
+                }
+            }
+            img {
+                width: 50%;
+                height: 120px;
+                display: block;
+                margin: auto;
+                margin-top: 30px;
+            }
+            .bottom-part {
+                text-align: center;
+                bottom: 0;
+                width: 100%;
+                height: 90px;
+                background: rgba(183, 183, 183, 0.24);
+                transition: all .5s ease-in-out;
+                p {
+                    margin-top: 20px;
+                }
+                span {
+                    color: #f62779;
+                }
+            }
+        }
+    }
+    .slick-dots li button:before {
+        margin-top: 10px;
+        background-color: #f62779 !important;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        z-index: 99;
+    }
+}
+
+
+/*End new arrived*/
+
+
+/*start diccounts*/
+
+.discount {
+    background: url('../../images/banner-back.png') center;
+    background-size: cover;
+    position: relative;
+    @media (max-width:767px) {
+        padding-bottom: 15px;
+    }
+    &::after {
+        @media (min-width:767px) {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            bottom: -193px;
+            left: 120px;
+            background: url('../../images/tamtam.png') center no-repeat;
+            background-size: contain;
+        } 
+    }
+    .info {
+        margin-top: 75px;
+        @media (max-width:767px) {
+            margin-top: 25px;
+        }
+        p {
+            font-size: 35px;
+            max-width: 100%;
+            color: black;
+            font-weight: 700;
+            width: 700px;
+            span {
+                color: #f62779;
+            }
+            @media (max-width:992px) {
+                font-size: 26px;
+            }
+            @media (max-width:767px) {
+                font-size: 22px;
+                width: 900px;
+            }
+        }
+        .common-button {
+            padding: 14px 70px;
+            font-size: 30px;
+            border: none;
+            background: #f62779;
+            color: #fff;
+            font-weight: 700;
+            border-radius: 8px;
+            margin-top: 15px;
+            cursor: pointer;
+            overflow: hidden;
+            transition: all .4s ease-in-out;
+            @media (max-width:992px) {
+                padding: 10px 65px;
+                margin-top: 3px;
+                font-size: 26px;
+            }
+            @media (max-width:767px) {
+                padding: 6px 18px;
+                margin-top: 5px;
+                font-size: 22px;
+            }
+            position: relative;
+            &:hover {
+                color: #fed109;
+                &::before {
+                    top: 0;
+                }
+                &::after {
+                    bottom: -25px;
+                }
+            }
+            &::before {
+                @media (min-width:767px) { 
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    top: -61px;
+                    width: 60px;
+                    height: 64px;
+                    background: url('../../images/tamtam.png') center no-repeat;
+                    background-size: contain;
+                    transition: all .4s ease-in-out;
+                }
+            }
+            &::after {
+                @media(min-width:767px) {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -78px;
+                    width: 62px;
+                    height: 77px;
+                    background: url('../../images/bogy.png') center no-repeat;
+                    background-size: contain;
+                    transition: all .4s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+/*End diccounts*/
+
+/*start games*/
+
+.games {
+    margin-top: 180px;
+    .the-head {
+        margin-bottom: 60px;
+        h3 {
+            width: 100px;
+        }
+    }
+    .upper-part {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width : 767px) {
+            margin-top: 20px;
+        }
+        div {
+            width: 47.5%;
+            img {
+                border-radius: 10px;
+            }
+        }
+    }
+    .bottom-part {
+        margin-top: 25px;
+        img {
+            border-radius: 10px;
+        }
+    }
+    @media (max-width:767px) {
+        margin-top: 40px;
+    }
+}
+
+/*End games*/
+
+/*start about*/
+
+.about {
+    margin-top: 140px;
+    .the-head {
+        margin-bottom: 40px;
+        h3 {
+            width: 140px;
+        }
+    }
+    @media (max-width:767px) {
+        margin-top: 40px;
+    }
+}
+
+/*End about*/
+
+/*start we are*/
+
+.we-are {
+    margin-top: 180px;
+    @media (max-width:767px) {
+        margin-top: 60px;
+    }
+    .right-part {
+        .the-head {
+            width: 140px;
+            margin-bottom: 30px;
+        }
+        p {
+            color: #b7b7b7;
+        }
+        button {
+            padding: 12px 50px;
+            font-size: 20px;
+            border: none;
+            background: #00AAFF;
+            color: #fff;
+            font-weight: 700;
+            border-radius: 8px;
+            margin-top: 15px;
+            cursor: pointer;
+            overflow: hidden;
+            transition: all .4s ease-in-out;
+            position: relative;
+            border: 1px solid #00AAFF;
+            &:hover {
+                background: #fff;
+                color: #00AAFF;
+                &::after {
+                    bottom: 0px;
+                }
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -50px;
+                width: 50px;
+                height: 50px;
+                background: url('../../images/bogy.png') center no-repeat;
+                background-size: contain;
+                transition: all .4s ease-in-out;
+            }
+        }    
+    }
+    .left-part {
+        width: 100%;
+        position: absolute;
+        top: -430px;
+        z-index: -1;
+        @media (max-width:1200px) {
+            top: -300px !important;
+        }
+        @media (max-width:992px) {
+            top: -90px !important;
+        }
+    }
+}
+
+/*End we are*/
+
+/*start testmonials*/
+
+.testmonials {
+    margin-top: 60px;
+    background: #00AAFF;
+    padding: 80px 0;
+    position: relative;
+   &::before {
+       content: '';
+       width: 100%;
+       height: 2px;
+       opacity: 0.5;
+       top: 10px;
+       left: 0;
+       position: absolute;
+       background: url('../../images/Line\ 21.png');
+   }
+   &::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    opacity: 0.5;
+    bottom: 10px;
+    left: 0;
+    position: absolute;
+    background: url('../../images/Line\ 21.png');
+   }
+    .the-head {
+        h3 {
+            width: 280px;
+            color: #fff;
+            font-weight: 500;
+        }
+    }
+    .opinions {
+        @media (min-width:0) {
+            .slick-list {
+                height: 440px !important;
+            }
+        }
+        position: relative;
+        margin-top: 60px;
+        .left-slider-comment {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 60px;
+            height: 60px;
+            background: #fed109;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 55px;
+            cursor: pointer;
+        }
+        .right-slider-comment {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            width: 60px;
+            height: 60px;
+            background: #fed109;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 55px;
+            cursor: pointer;
+            @media (min-width:767px) {
+                z-index: 9;
+            }
+        }
+        .opinion-item {
+            .img {
+                width: 200px;
+                margin: auto;
+                img {
+                    border-radius: 30%;
+                }
+            }
+            p {
+                margin-top: 50px !important;
+                text-align: center;
+                width: 40%;
+                margin: auto;
+                color: #fff;
+                font-size: 18px;
+                position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    left: -70px;
+                    top: 0;
+                    background: url('../../images/after.png') no-repeat;
+                    @media (max-width:767px) {
+                        width: 30px;
+                        height: 30px;
+                        left: -20px;
+                    }
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    right: -70px;
+                    top: 0;
+                    background: url('../../images/before.png') no-repeat;
+                    @media (max-width:767px) {
+                        width: 30px;
+                        height: 30px;
+                        right: -20px;
+                     }
+                }
+                @media (max-width:992px) {
+                    width: 60%;
+                }
+                @media (max-width:767px) {
+                    width: 80% !important;
+                    font-size: 14px;
+                }
+            }
+            h3 {
+                text-align: center;
+                color: #fff;
+                width: 165px;
+                margin: auto;
+                margin-top: 30px;
+                @media (max-width:992px) {
+                   font-size: 26px;
+                }
+            }
+        }
+    }
+    .slick-dots li button:before {
+        margin-top: 10px;
+        background-color: #fed109 !important;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        z-index: 99;
+    }
+}
+
+/*End testmonials*/
+
+/*start articals*/
+
+.articals {
+    margin-top: 60px;
+    .the-head {
+        h3 {
+            width: 180px;
+        }
+    }
+    .articals-container {
+        margin-top: 50px;
+        position: relative;
+        .right-slider-comment {
+            position: absolute;
+            right: 40%;
+            bottom: -40px;
+            cursor: pointer;
+            z-index: 9;
+        }
+        .left-slider-comment {
+            position: absolute;
+            left: 40%; 
+            bottom: -40px;
+            transform: rotate(180deg);
+            cursor: pointer;
+        }
+        .artical-item {
+            display: flex;
+            .left-part {
+                margin-right: 25px;
+                h3 {
+                    font-size: 22px;
+                    @media (max-width:1200px) {
+                        font-size: 16px;
+                        line-height: 1.6;
+                    }
+                }
+                p {
+                    color: #b7b7b7;
+                    i {
+                        color: #000;
+                    }
+                }
+                button {
+                    padding: 12px 50px;
+                    font-size: 20px;
+                    border: none;
+                    background: #00AAFF;
+                    color: #fff;
+                    font-weight: 700;
+                    border-radius: 8px;
+                    margin-top: 15px;
+                    cursor: pointer;
+                    overflow: hidden;
+                    transition: all .4s ease-in-out;
+                    position: relative;
+                    border: 1px solid #00AAFF;
+                    &:hover {
+                        background: #fff;
+                        color: #00AAFF;
+                        &::after {
+                            bottom: 0px;
+                        }
+                    }
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        bottom: -50px;
+                        width: 50px;
+                        height: 50px;
+                        background: url('../../images/bogy.png') center no-repeat;
+                        background-size: contain;
+                        transition: all .4s ease-in-out;
+                        @media (max-width:1200px) {
+                            height: 40px;
+                        }
+                    }
+                    @media (max-width:1200px) {
+                        padding: 8px 30px 8px 35px;
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+                }  
+            }
+        }
+    }
+    .slick-dots li button:before {
+        margin-top: 10px;
+        background-color: #f62779 !important;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        z-index: 99;
+    }
+}
+
+/*End articals*/
+
+/* start features*/
+
+.features {
+    margin-top: 100px;
+    .feat {
+        text-align: center;
+        border: 1px solid #00AAFF;
+        border-radius: 10px;
+        padding: 15px;
+        margin: 0 7.5px;
+        &:hover {
+            .photo {
+                transform: rotateY(360deg);
+            }
+            background: rgba(#00AAFF, 0.1);
+        }
+        .photo {
+            width: 100px;
+            height: 75px;
+            margin: auto;
+            transition: all .5s ease-in-out;
+            .last {
+                margin-right: 15px;
+            }
+        }
+        h4 {
+            font-size: 22px;
+            margin: 20px 0;
+        }
+        p {
+            color: #b7b7b7;
+        }
+    }
+}
+
+/* End features*/
+
+
+/*start map*/
+
+.map {
+    margin-top: 40px;
+    iframe {
+        width: 100%!important;
+    }
+}
+
+/*End map*/
+
+
+
+
+

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29.018" height="19.536" viewBox="0 0 29.018 19.536">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="29.018" height="19.536" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="right-slider-comment" clip-path="url(#clip-path)">
+    <g id="right-slider-comment-2" data-name="right-slider-comment" transform="translate(1.25 1.768)">
+      <line id="Line_23" data-name="Line 23" x2="26" transform="translate(0 8)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="2.5"/>
+      <line id="Line_24" data-name="Line 24" x2="8" y2="8" transform="translate(18)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="2.5"/>
+      <line id="Line_25" data-name="Line 25" y1="8" x2="8" transform="translate(18 8)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="2.5"/>
+    </g>
+  </g>
+</svg>
