@@ -1,5 +1,6 @@
 
 $(document).ready(function(){
+
 /*start header*/
 
 var menu = document.querySelector('.menu'),
@@ -21,7 +22,9 @@ function closeMenu () {
     menu.style.display = 'none';
     sideBar.style.right = '-205px';
 }
-
+sideBar.addEventListener('click',(e) => {
+    e.stopPropagation();
+})
 bars.onclick = function () {
 
     openMenu ();
